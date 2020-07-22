@@ -52,8 +52,13 @@ test-prereqs:
 	@echo Checking for Avro C library...
 	@pkg-config 'avro-c >= 1.5.0' --exists --print-errors
 
-AVRO_CFLAGS := $(shell pkg-config avro-c --cflags)
-AVRO_LDFLAGS := $(shell pkg-config avro-c --libs)
+#AVRO_CFLAGS := $(shell pkg-config avro-c --cflags)
+#AVRO_LDFLAGS := $(shell pkg-config avro-c --libs)
+
+# make build-c
+# you should build libavro.so at first
+AVRO_CFLAGS :=  #-I/usr/local/include
+AVRO_LDFLAGS := -lavro  #/usr/local/lib/libavro
 
 # Build rules
 
