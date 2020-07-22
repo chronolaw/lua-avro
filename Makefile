@@ -26,7 +26,7 @@ USE_LUAROCKS=1
 DESTDIR=
 PREFIX=/usr/local
 #LUA_INCDIR=$(PREFIX)/include
-LUA_INCDIR=LUA_INCDIR=/opt/luajit/include/luajit-2.1
+LUA_INCDIR=/opt/luajit/include/luajit-2.1
 LUA_LIBDIR=$(PREFIX)/lib/lua/5.1
 LUA_SHAREDIR=$(PREFIX)/share/lua/5.1
 
