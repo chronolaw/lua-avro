@@ -534,7 +534,7 @@ local function new_schema(self, legacy)
    return setmetatable(result, Schema_mt)
 end
 
-function new_raw_schema(schema)
+local function new_raw_schema(schema)
    local legacy, self = L.new_raw_schema(schema)
    return new_schema(self, legacy)
 end
